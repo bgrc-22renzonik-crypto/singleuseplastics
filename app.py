@@ -1,106 +1,98 @@
-from flask import Flask, render_template_string
+# app.py
 
-app = Flask(__name__)
-
-HTML = """
+html = """
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Single Use Plastics</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Single Use Plastics</title>
 
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background: linear-gradient(135deg, #0f172a, #1e3a8a);
-            color: white;
-            margin: 0;
-            padding: 30px;
-        }
+<style>
+body{
+    font-family: Arial, sans-serif;
+    margin:0;
+    padding:30px;
+    background:linear-gradient(135deg,#0f172a,#1e3a8a);
+    color:white;
+}
 
-        h1 {
-            text-align: center;
-            font-size: 3rem;
-            margin-bottom: 30px;
-        }
+h1{
+    text-align:center;
+    font-size:3rem;
+}
 
-        .card {
-            background: rgba(255,255,255,0.08);
-            padding: 25px;
-            margin-bottom: 25px;
-            border-radius: 15px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-            transition: transform 0.3s;
-        }
+.card{
+    background:rgba(255,255,255,0.08);
+    padding:20px;
+    margin:20px 0;
+    border-radius:15px;
+    box-shadow:0 4px 8px rgba(0,0,0,0.3);
+}
 
-        .card:hover {
-            transform: translateY(-4px);
-        }
+h2{
+    color:#7dd3fc;
+}
 
-        h2 {
-            color: #7dd3fc;
-        }
+p{
+    line-height:1.8;
+    font-size:18px;
+}
 
-        p {
-            line-height: 1.8;
-            font-size: 18px;
-        }
+.footer{
+    text-align:center;
+    margin-top:30px;
+    color:#cbd5e1;
+}
+</style>
 
-        .footer {
-            text-align: center;
-            margin-top: 30px;
-            color: #cbd5e1;
-        }
-    </style>
 </head>
 <body>
 
 <h1>🌍 Single Use Plastics</h1>
 
 <div class="card">
-    <h2>📚 What Are Single Use Plastics?</h2>
-    <p>
-        Single use plastics are plastic items that are only used once before being
-        thrown away. Examples include plastic straws, shopping bags, water bottles,
-        and food packaging.
-    </p>
+<h2>📚 What Are Single Use Plastics?</h2>
+<p>
+Single use plastics are plastic items that are used once and then thrown away.
+Examples include plastic straws, shopping bags, water bottles and food packaging.
+</p>
 </div>
 
 <div class="card">
-    <h2>🐢 Environmental Effects</h2>
-    <p>
-        Single use plastics can pollute oceans, rivers, and land. Animals may
-        mistake plastic for food, which can harm them. Over time, plastics break
-        into tiny pieces called microplastics that can spread through ecosystems.
-    </p>
+<h2>🐢 Environmental Effects</h2>
+<p>
+Plastic waste can pollute oceans, rivers and land. Animals may mistake plastic
+for food, which can cause harm. Plastic can also break into tiny pieces called
+microplastics that spread through the environment.
+</p>
 </div>
 
 <div class="card">
-    <h2>♻️ How Can We Help?</h2>
-    <p>
-        People can reduce plastic waste by using reusable bags, reusable water
-        bottles, and recycling correctly. Small changes can make a big difference.
-    </p>
+<h2>♻️ How Can We Help?</h2>
+<p>
+We can reduce plastic waste by using reusable bags, reusable bottles and
+recycling correctly. Small actions can make a big difference.
+</p>
 </div>
 
 <div class="card">
-    <h2>💡 Conclusion</h2>
-    <p>
-        Single use plastics are a major environmental issue, but everyone can help
-        reduce the problem through simple everyday actions.
-    </p>
+<h2>💡 Conclusion</h2>
+<p>
+Single use plastics are a major environmental issue, but everyone can help by
+making better choices every day.
+</p>
 </div>
 
 <div class="footer">
-    Created for Year 7–8 Students 🌎
+Created for Year 7–8 Students 🌎
 </div>
 
 </body>
 </html>
 """
 
-@app.route("/")
-def home():
-    return render_template_string(HTML)
+with open("index.html", "w", encoding="utf-8") as f:
+    f.write(html)
 
-if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=5000, debug=True)
+print("Website created successfully! Open index.html in your browser.")
