@@ -99,8 +99,3 @@ generations.
 </p>
 </div>
 """, unsafe_allow_html=True)
-
-st.markdown(
-    "<h2 style='text-align:center; color:white;'>🌎 Created for Year 7–8 Students 🌎</h2>",
-    unsafe_allow_html=True
-)
