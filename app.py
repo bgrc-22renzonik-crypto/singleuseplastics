@@ -1,101 +1,29 @@
-import streamlit as st
-
-st.set_page_config(
-    page_title="Single Use Plastics",
-    page_icon="🌍",
-    layout="wide"
-)
-
-st.markdown("""
-<style>
-.stApp {
-    background: linear-gradient(135deg, #003366, #0066cc, #3399ff);
-}
-
-h1 {
-    color: white;
-    text-align: center;
-    font-size: 4rem;
-}
-
-.card {
-    background: rgba(255,255,255,0.15);
-    padding: 30px;
-    border-radius: 20px;
-    margin-bottom: 25px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-}
-
-h2 {
-    color: #e0f2fe;
-    font-size: 2.2rem;
-}
-
-p {
-    color: white;
-    font-size: 26px;
-    line-height: 2;
-}
-</style>
-""", unsafe_allow_html=True)
-
-st.title("🌍 Single-Use Plastics")
-
 st.markdown("""
 <div class="card">
 <h2>📚 What Are Single-Use Plastics?</h2>
 <p>
-Single-use plastics are things made of plastic that we only use once before
-throwing them away. Some examples are plastic straws, shopping bags, water
-bottles and food wrappers. These items can be useful and convenient, but because
-millions of people use them every day, they create a huge amount of rubbish.
-Most of this rubbish takes a very long time to break down, which means it can
-stay in the environment for many years.
+Single-use plastics are items made from plastic that are designed to be used only once before they are thrown away. Examples include plastic shopping bags, water bottles, food wrappers, plastic straws and disposable cutlery. These items are very common because they are cheap, lightweight and easy to use. However, because people use so many of them every day, a huge amount of plastic waste is created around the world. Much of this plastic ends up in landfill sites, rivers, beaches and oceans. Unlike materials such as paper, plastic takes a very long time to break down naturally. Some plastic products can remain in the environment for hundreds of years. As the world's population grows and more products are packaged in plastic, the amount of plastic waste continues to increase. This means that single-use plastics have become one of the biggest environmental challenges facing the world today.
 </p>
 </div>
-""", unsafe_allow_html=True)
 
-st.markdown("""
 <div class="card">
 <h2>🐢 Environmental Effects</h2>
 <p>
-Plastic pollution is a serious problem for our planet. When plastic is dropped
-on the ground or not recycled properly, it can end up in rivers, beaches and
-oceans. Animals sometimes mistake plastic for food, which can make them sick or
-even cause them to die. Over time, plastic can break into tiny pieces called
-microplastics. These small pieces can spread through the environment and are
-very difficult to remove.
+Plastic pollution has a major impact on the environment. When plastic is not disposed of correctly, it can be carried by the wind or rain into rivers, lakes and oceans. Many animals accidentally eat plastic because they mistake it for food. Sea turtles, seabirds and fish are especially affected by plastic pollution. Consuming plastic can make animals sick and can sometimes lead to death. Plastic waste can also become tangled around animals, making it difficult for them to move or survive. Over time, larger pieces of plastic break into smaller pieces known as microplastics. These tiny particles can spread through water, soil and even the food chain. Scientists have found microplastics in many parts of the world, showing how widespread the problem has become. Because plastic pollution affects both wildlife and natural habitats, reducing plastic waste is important for protecting ecosystems and maintaining a healthier environment for future generations.
 </p>
 </div>
-""", unsafe_allow_html=True)
 
-st.markdown("""
 <div class="card">
 <h2>♻️ How Can We Help?</h2>
 <p>
-There are many simple ways we can help reduce plastic waste. We can bring a
-reusable water bottle, use reusable shopping bags and recycle correctly. Schools,
-families and communities can all work together to reduce the amount of plastic
-that is thrown away. Even small changes can make a positive difference when lots
-of people take part.
+Although plastic pollution is a serious issue, there are many actions people can take to reduce the problem. One simple solution is to use reusable items instead of disposable ones. For example, people can carry reusable shopping bags, refillable water bottles and reusable lunch containers. Recycling plastic correctly can also help reduce the amount of waste that ends up in landfill sites. Schools and communities can organise clean-up events to remove litter from parks, beaches and local areas. Governments and businesses can also help by reducing unnecessary plastic packaging and encouraging the use of environmentally friendly alternatives. Even though one person's actions may seem small, when many people work together the impact can be significant. By making responsible choices every day, individuals can help reduce pollution and contribute to a cleaner environment.
 </p>
 </div>
-""", unsafe_allow_html=True)
 
-st.markdown("""
 <div class="card">
 <h2>💡 Conclusion</h2>
 <p>
-To conclude, single-use plastics are causing problems for the environment, but
-there are ways we can help. By making better choices every day and reducing the
-amount of plastic we use, we can help keep our planet cleaner and safer for
-animals and future generations. Everyone can play a part in protecting the
-environment.
+In conclusion, single-use plastics are useful products that many people rely on in their daily lives, but they also create significant environmental problems. Plastic waste can harm wildlife, pollute natural environments and contribute to long-term pollution issues around the world. Because plastic takes such a long time to break down, the effects of plastic waste can remain for many years. Fortunately, there are many ways people can help reduce the problem, including using reusable products, recycling responsibly and making environmentally friendly choices whenever possible. While solving plastic pollution will require effort from individuals, communities, businesses and governments, everyone can play a role. By understanding the issue and taking action, we can help protect the environment and create a cleaner, healthier future for generations to come.
 </p>
 </div>
 """, unsafe_allow_html=True)
-
-st.markdown(
-    "<h3 style='text-align:center; color:white;'>🌎 Created for Year 7–8 Students 🌎</h3>",
-    unsafe_allow_html=True
-)
